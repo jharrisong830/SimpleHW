@@ -8,17 +8,61 @@
 
 /* Begin PBXBuildFile section */
 		A9CDB0652A4A86D60037CEDB /* SimpleHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */; };
-		A9CDB0672A4A86D60037CEDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0662A4A86D60037CEDB /* ContentView.swift */; };
 		A9CDB0692A4A86D60037CEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0682A4A86D60037CEDB /* Assets.xcassets */; };
 		A9CDB06C2A4A86D60037CEDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB06B2A4A86D60037CEDB /* Preview Assets.xcassets */; };
+		A9CDB0752A4A87E00037CEDB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0742A4A87E00037CEDB /* MainView.swift */; };
+		A9CDB0772A4A88160037CEDB /* Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0762A4A88160037CEDB /* Class.swift */; };
+		A9CDB0792A4A881F0037CEDB /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0782A4A881F0037CEDB /* Assignment.swift */; };
+		A9CDB07B2A4A88280037CEDB /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB07A2A4A88280037CEDB /* Store.swift */; };
+		A9CDB07D2A4A88450037CEDB /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB07C2A4A88450037CEDB /* ErrorWrapper.swift */; };
+		A9CDB07F2A4A88510037CEDB /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB07E2A4A88510037CEDB /* Icon.swift */; };
+		A9CDB0812A4A88590037CEDB /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0802A4A88590037CEDB /* Theme.swift */; };
+		A9CDB0842A4A89080037CEDB /* AssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0832A4A89080037CEDB /* AssignmentView.swift */; };
+		A9CDB0862A4A89180037CEDB /* AddAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0852A4A89180037CEDB /* AddAssignmentView.swift */; };
+		A9CDB0882A4A892C0037CEDB /* EditAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0872A4A892C0037CEDB /* EditAssignmentView.swift */; };
+		A9CDB08A2A4A893C0037CEDB /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0892A4A893C0037CEDB /* ToDoView.swift */; };
+		A9CDB08D2A4A89730037CEDB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB08C2A4A89730037CEDB /* CardView.swift */; };
+		A9CDB08F2A4A89880037CEDB /* ClassListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB08E2A4A89880037CEDB /* ClassListView.swift */; };
+		A9CDB0912A4A899A0037CEDB /* EditClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0902A4A899A0037CEDB /* EditClassView.swift */; };
+		A9CDB0932A4A89A20037CEDB /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0922A4A89A20037CEDB /* ClassView.swift */; };
+		A9CDB0952A4A89B40037CEDB /* NewClassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0942A4A89B40037CEDB /* NewClassSheet.swift */; };
+		A9CDB0982A4A8AA00037CEDB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0972A4A8AA00037CEDB /* ErrorView.swift */; };
+		A9CDB09A2A4A8AB10037CEDB /* GridIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0992A4A8AB10037CEDB /* GridIconLabelStyle.swift */; };
+		A9CDB09C2A4A8ABF0037CEDB /* IconPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB09B2A4A8ABF0037CEDB /* IconPicker.swift */; };
+		A9CDB09E2A4A8ACB0037CEDB /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB09D2A4A8ACB0037CEDB /* IconView.swift */; };
+		A9CDB0A02A4A8AD30037CEDB /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */; };
+		A9CDB0A22A4A8ADC0037CEDB /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */; };
+		A9CDB0A42A4A8AE80037CEDB /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A9CDB0612A4A86D60037CEDB /* SimpleHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHWApp.swift; sourceTree = "<group>"; };
-		A9CDB0662A4A86D60037CEDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9CDB0682A4A86D60037CEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CDB06B2A4A86D60037CEDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9CDB0742A4A87E00037CEDB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		A9CDB0762A4A88160037CEDB /* Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class.swift; sourceTree = "<group>"; };
+		A9CDB0782A4A881F0037CEDB /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		A9CDB07A2A4A88280037CEDB /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A9CDB07C2A4A88450037CEDB /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		A9CDB07E2A4A88510037CEDB /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		A9CDB0802A4A88590037CEDB /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A9CDB0832A4A89080037CEDB /* AssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentView.swift; sourceTree = "<group>"; };
+		A9CDB0852A4A89180037CEDB /* AddAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAssignmentView.swift; sourceTree = "<group>"; };
+		A9CDB0872A4A892C0037CEDB /* EditAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAssignmentView.swift; sourceTree = "<group>"; };
+		A9CDB0892A4A893C0037CEDB /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		A9CDB08C2A4A89730037CEDB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A9CDB08E2A4A89880037CEDB /* ClassListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListView.swift; sourceTree = "<group>"; };
+		A9CDB0902A4A899A0037CEDB /* EditClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClassView.swift; sourceTree = "<group>"; };
+		A9CDB0922A4A89A20037CEDB /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
+		A9CDB0942A4A89B40037CEDB /* NewClassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassSheet.swift; sourceTree = "<group>"; };
+		A9CDB0972A4A8AA00037CEDB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A9CDB0992A4A8AB10037CEDB /* GridIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridIconLabelStyle.swift; sourceTree = "<group>"; };
+		A9CDB09B2A4A8ABF0037CEDB /* IconPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPicker.swift; sourceTree = "<group>"; };
+		A9CDB09D2A4A8ACB0037CEDB /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */,
-				A9CDB0662A4A86D60037CEDB /* ContentView.swift */,
+				A9CDB0732A4A871C0037CEDB /* Views */,
+				A9CDB0722A4A87090037CEDB /* Models */,
 				A9CDB0682A4A86D60037CEDB /* Assets.xcassets */,
 				A9CDB06A2A4A86D60037CEDB /* Preview Content */,
 			);
@@ -65,6 +110,67 @@
 				A9CDB06B2A4A86D60037CEDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A9CDB0722A4A87090037CEDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB0762A4A88160037CEDB /* Class.swift */,
+				A9CDB0782A4A881F0037CEDB /* Assignment.swift */,
+				A9CDB07A2A4A88280037CEDB /* Store.swift */,
+				A9CDB07C2A4A88450037CEDB /* ErrorWrapper.swift */,
+				A9CDB07E2A4A88510037CEDB /* Icon.swift */,
+				A9CDB0802A4A88590037CEDB /* Theme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9CDB0732A4A871C0037CEDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB0742A4A87E00037CEDB /* MainView.swift */,
+				A9CDB0962A4A8A8A0037CEDB /* Utils */,
+				A9CDB08B2A4A89420037CEDB /* Classes */,
+				A9CDB0822A4A88EC0037CEDB /* Assignments */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9CDB0822A4A88EC0037CEDB /* Assignments */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB0832A4A89080037CEDB /* AssignmentView.swift */,
+				A9CDB0852A4A89180037CEDB /* AddAssignmentView.swift */,
+				A9CDB0872A4A892C0037CEDB /* EditAssignmentView.swift */,
+				A9CDB0892A4A893C0037CEDB /* ToDoView.swift */,
+			);
+			path = Assignments;
+			sourceTree = "<group>";
+		};
+		A9CDB08B2A4A89420037CEDB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB08C2A4A89730037CEDB /* CardView.swift */,
+				A9CDB08E2A4A89880037CEDB /* ClassListView.swift */,
+				A9CDB0902A4A899A0037CEDB /* EditClassView.swift */,
+				A9CDB0922A4A89A20037CEDB /* ClassView.swift */,
+				A9CDB0942A4A89B40037CEDB /* NewClassSheet.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A9CDB0962A4A8A8A0037CEDB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB0972A4A8AA00037CEDB /* ErrorView.swift */,
+				A9CDB0992A4A8AB10037CEDB /* GridIconLabelStyle.swift */,
+				A9CDB09B2A4A8ABF0037CEDB /* IconPicker.swift */,
+				A9CDB09D2A4A8ACB0037CEDB /* IconView.swift */,
+				A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */,
+				A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */,
+				A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +243,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CDB0672A4A86D60037CEDB /* ContentView.swift in Sources */,
+				A9CDB07D2A4A88450037CEDB /* ErrorWrapper.swift in Sources */,
+				A9CDB09E2A4A8ACB0037CEDB /* IconView.swift in Sources */,
+				A9CDB0A22A4A8ADC0037CEDB /* ThemeView.swift in Sources */,
+				A9CDB0812A4A88590037CEDB /* Theme.swift in Sources */,
+				A9CDB09C2A4A8ABF0037CEDB /* IconPicker.swift in Sources */,
+				A9CDB09A2A4A8AB10037CEDB /* GridIconLabelStyle.swift in Sources */,
+				A9CDB0882A4A892C0037CEDB /* EditAssignmentView.swift in Sources */,
+				A9CDB0952A4A89B40037CEDB /* NewClassSheet.swift in Sources */,
+				A9CDB07B2A4A88280037CEDB /* Store.swift in Sources */,
+				A9CDB07F2A4A88510037CEDB /* Icon.swift in Sources */,
+				A9CDB0842A4A89080037CEDB /* AssignmentView.swift in Sources */,
+				A9CDB0982A4A8AA00037CEDB /* ErrorView.swift in Sources */,
+				A9CDB0A02A4A8AD30037CEDB /* ThemePicker.swift in Sources */,
+				A9CDB0862A4A89180037CEDB /* AddAssignmentView.swift in Sources */,
+				A9CDB08D2A4A89730037CEDB /* CardView.swift in Sources */,
+				A9CDB0792A4A881F0037CEDB /* Assignment.swift in Sources */,
+				A9CDB0772A4A88160037CEDB /* Class.swift in Sources */,
 				A9CDB0652A4A86D60037CEDB /* SimpleHWApp.swift in Sources */,
+				A9CDB0932A4A89A20037CEDB /* ClassView.swift in Sources */,
+				A9CDB0A42A4A8AE80037CEDB /* TrailingIconLabelStyle.swift in Sources */,
+				A9CDB08F2A4A89880037CEDB /* ClassListView.swift in Sources */,
+				A9CDB08A2A4A893C0037CEDB /* ToDoView.swift in Sources */,
+				A9CDB0752A4A87E00037CEDB /* MainView.swift in Sources */,
+				A9CDB0912A4A899A0037CEDB /* EditClassView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
