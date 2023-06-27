@@ -30,7 +30,7 @@ struct AddAssignmentView: View {
                             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                                 if success && newAssignment.notifEnabled {
                                     let content = UNMutableNotificationContent()
-                                    content.title = "\(newAssignment.name) - \(course.code)"
+                                    content.title = "\(newAssignment.name) - \(course.displayName)"
                                     content.subtitle = "Due \(newAssignment.notifDate.formatted(.dateTime.day().month()))"
                                     content.sound = UNNotificationSound.default
 

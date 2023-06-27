@@ -81,7 +81,7 @@ struct AssignmentView: View {
                                         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
                                         
                                         let content = UNMutableNotificationContent()
-                                        content.title = "\(assignm.name) - \(course.code)"
+                                        content.title = "\(assignm.name) - \(course.displayName)"
                                         content.subtitle = "Due \(assignm.notifDate.formatted(.dateTime.day().month()))"
                                         content.sound = UNNotificationSound.default
 

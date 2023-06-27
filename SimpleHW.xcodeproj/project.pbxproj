@@ -84,13 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9C6DFF72A4B2CC00062B6AA /* Grades */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grades;
-			sourceTree = "<group>";
-		};
 		A9CDB0582A4A86D60037CEDB = {
 			isa = PBXGroup;
 			children = (
@@ -145,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				A9CDB0742A4A87E00037CEDB /* MainView.swift */,
-				A9C6DFF72A4B2CC00062B6AA /* Grades */,
 				A9CDB0962A4A8A8A0037CEDB /* Utils */,
 				A9CDB08B2A4A89420037CEDB /* Classes */,
 				A9CDB0822A4A88EC0037CEDB /* Assignments */,
