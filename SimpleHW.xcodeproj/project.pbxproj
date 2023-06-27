@@ -33,6 +33,10 @@
 		A9CDB0A02A4A8AD30037CEDB /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */; };
 		A9CDB0A22A4A8ADC0037CEDB /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */; };
 		A9CDB0A42A4A8AE80037CEDB /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */; };
+		A9CDB0AA2A4A93A90037CEDB /* Template - App Icon - P3.afphoto in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A62A4A93A90037CEDB /* Template - App Icon - P3.afphoto */; };
+		A9CDB0AB2A4A93A90037CEDB /* icon vector.svg in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A72A4A93A90037CEDB /* icon vector.svg */; };
+		A9CDB0AC2A4A93A90037CEDB /* iconV1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A82A4A93A90037CEDB /* iconV1.png */; };
+		A9CDB0AD2A4A93A90037CEDB /* icon vector.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,10 @@
 		A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
+		A9CDB0A62A4A93A90037CEDB /* Template - App Icon - P3.afphoto */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Template - App Icon - P3.afphoto"; sourceTree = "<group>"; };
+		A9CDB0A72A4A93A90037CEDB /* icon vector.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon vector.svg"; sourceTree = "<group>"; };
+		A9CDB0A82A4A93A90037CEDB /* iconV1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconV1.png; sourceTree = "<group>"; };
+		A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "icon vector.afdesign"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 				A9CDB0732A4A871C0037CEDB /* Views */,
 				A9CDB0722A4A87090037CEDB /* Models */,
 				A9CDB0682A4A86D60037CEDB /* Assets.xcassets */,
+				A9CDB0A52A4A93A90037CEDB /* Design */,
 				A9CDB06A2A4A86D60037CEDB /* Preview Content */,
 			);
 			path = SimpleHW;
@@ -173,6 +182,18 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A9CDB0A52A4A93A90037CEDB /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				A9CDB0A62A4A93A90037CEDB /* Template - App Icon - P3.afphoto */,
+				A9CDB0A72A4A93A90037CEDB /* icon vector.svg */,
+				A9CDB0A82A4A93A90037CEDB /* iconV1.png */,
+				A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */,
+			);
+			name = Design;
+			path = SimpleHW/Design;
+			sourceTree = SOURCE_ROOT;
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,7 +253,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CDB06C2A4A86D60037CEDB /* Preview Assets.xcassets in Resources */,
+				A9CDB0AD2A4A93A90037CEDB /* icon vector.afdesign in Resources */,
+				A9CDB0AB2A4A93A90037CEDB /* icon vector.svg in Resources */,
+				A9CDB0AA2A4A93A90037CEDB /* Template - App Icon - P3.afphoto in Resources */,
 				A9CDB0692A4A86D60037CEDB /* Assets.xcassets in Resources */,
+				A9CDB0AC2A4A93A90037CEDB /* iconV1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
