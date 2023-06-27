@@ -16,7 +16,7 @@ struct CardView: View {
                 .font(.headline)
             Spacer()
             HStack {
-                if course.title == course.code {
+                if course.code == "" {
                     EmptyView()
                 }
                 else {

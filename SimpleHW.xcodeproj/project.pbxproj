@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9149D0F2A4B820D00E9D001 /* SimpleHWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9149D0E2A4B820D00E9D001 /* SimpleHWTests.swift */; };
 		A9CDB0652A4A86D60037CEDB /* SimpleHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */; };
 		A9CDB0692A4A86D60037CEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0682A4A86D60037CEDB /* Assets.xcassets */; };
 		A9CDB06C2A4A86D60037CEDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB06B2A4A86D60037CEDB /* Preview Assets.xcassets */; };
@@ -39,7 +40,19 @@
 		A9CDB0AD2A4A93A90037CEDB /* icon vector.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A9149D102A4B820D00E9D001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9CDB0592A4A86D60037CEDB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9CDB0602A4A86D60037CEDB;
+			remoteInfo = SimpleHW;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A9149D0C2A4B820D00E9D001 /* SimpleHWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9149D0E2A4B820D00E9D001 /* SimpleHWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHWTests.swift; sourceTree = "<group>"; };
 		A9CDB0612A4A86D60037CEDB /* SimpleHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHWApp.swift; sourceTree = "<group>"; };
 		A9CDB0682A4A86D60037CEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +87,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A9149D092A4B820D00E9D001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9CDB05E2A4A86D60037CEDB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -84,10 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9149D0D2A4B820D00E9D001 /* SimpleHWTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9149D0E2A4B820D00E9D001 /* SimpleHWTests.swift */,
+			);
+			path = SimpleHWTests;
+			sourceTree = "<group>";
+		};
 		A9CDB0582A4A86D60037CEDB = {
 			isa = PBXGroup;
 			children = (
 				A9CDB0632A4A86D60037CEDB /* SimpleHW */,
+				A9149D0D2A4B820D00E9D001 /* SimpleHWTests */,
 				A9CDB0622A4A86D60037CEDB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A9CDB0612A4A86D60037CEDB /* SimpleHW.app */,
+				A9149D0C2A4B820D00E9D001 /* SimpleHWTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +227,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A9149D0B2A4B820D00E9D001 /* SimpleHWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9149D122A4B820D00E9D001 /* Build configuration list for PBXNativeTarget "SimpleHWTests" */;
+			buildPhases = (
+				A9149D082A4B820D00E9D001 /* Sources */,
+				A9149D092A4B820D00E9D001 /* Frameworks */,
+				A9149D0A2A4B820D00E9D001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9149D112A4B820D00E9D001 /* PBXTargetDependency */,
+			);
+			name = SimpleHWTests;
+			productName = SimpleHWTests;
+			productReference = A9149D0C2A4B820D00E9D001 /* SimpleHWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A9CDB0602A4A86D60037CEDB /* SimpleHW */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9CDB06F2A4A86D60037CEDB /* Build configuration list for PBXNativeTarget "SimpleHW" */;
@@ -224,6 +272,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					A9149D0B2A4B820D00E9D001 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = A9CDB0602A4A86D60037CEDB;
+					};
 					A9CDB0602A4A86D60037CEDB = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -243,11 +295,19 @@
 			projectRoot = "";
 			targets = (
 				A9CDB0602A4A86D60037CEDB /* SimpleHW */,
+				A9149D0B2A4B820D00E9D001 /* SimpleHWTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A9149D0A2A4B820D00E9D001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9CDB05F2A4A86D60037CEDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +324,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A9149D082A4B820D00E9D001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9149D0F2A4B820D00E9D001 /* SimpleHWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9CDB05D2A4A86D60037CEDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,7 +365,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A9149D112A4B820D00E9D001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9CDB0602A4A86D60037CEDB /* SimpleHW */;
+			targetProxy = A9149D102A4B820D00E9D001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A9149D132A4B820D00E9D001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYQ5JDQFTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Graham.SimpleHWTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleHW.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleHW";
+			};
+			name = Debug;
+		};
+		A9149D142A4B820D00E9D001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZYQ5JDQFTR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "John-Graham.SimpleHWTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleHW.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleHW";
+			};
+			name = Release;
+		};
 		A9CDB06D2A4A86D60037CEDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -485,6 +597,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A9149D122A4B820D00E9D001 /* Build configuration list for PBXNativeTarget "SimpleHWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9149D132A4B820D00E9D001 /* Debug */,
+				A9149D142A4B820D00E9D001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A9CDB05C2A4A86D60037CEDB /* Build configuration list for PBXProject "SimpleHW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
