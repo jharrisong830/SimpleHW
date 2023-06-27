@@ -74,6 +74,7 @@ struct AssignmentView: View {
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Done") {
                                 isEditing=false
+                                editingAssignment.dueDate = editingAssignment.getEODTime()
                                 assignm=editingAssignment
                                 UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                                     if success && assignm.notifEnabled {

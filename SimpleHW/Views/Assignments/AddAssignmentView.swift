@@ -25,6 +25,7 @@ struct AddAssignmentView: View {
                     }
                     ToolbarItem(placement: .confirmationAction) {
                         Button("Add") {
+                            newAssignment.dueDate = newAssignment.getEODTime()
                             assignments.append(newAssignment)
                             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                                 if success && newAssignment.notifEnabled {

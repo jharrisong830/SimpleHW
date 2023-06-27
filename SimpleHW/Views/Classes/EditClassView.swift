@@ -16,7 +16,7 @@ struct EditClassView: View {
                 TextField("Title", text: $course.title)
                 TextField("Nickname", text: $course.code)
                 HStack {
-                    Slider(value: $course.creditsAsDouble, in: 0...4, step: 1) {
+                    Slider(value: $course.creditsAsDouble, in: 0...9, step: 1) {
                         Text("Credits")
                     }
                     Spacer()

@@ -28,6 +28,14 @@ struct Assignment: Identifiable, Codable {
     func isAlmostDue() -> Bool {
         return self.dueDate.timeIntervalSince1970 - Date().timeIntervalSince1970 < 86400
     }
+    
+    func getEODTime() -> Date {
+        var components = Calendar.current.dateComponents(in: TimeZone.current, from: self.dueDate)
+        components.hour = 23
+        components.minute = 59
+        components.second = 59
+        return components.date!
+    }
 }
 
 extension Assignment {
