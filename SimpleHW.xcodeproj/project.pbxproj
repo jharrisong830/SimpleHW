@@ -38,6 +38,8 @@
 		A9CDB0AB2A4A93A90037CEDB /* icon vector.svg in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A72A4A93A90037CEDB /* icon vector.svg */; };
 		A9CDB0AC2A4A93A90037CEDB /* iconV1.png in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A82A4A93A90037CEDB /* iconV1.png */; };
 		A9CDB0AD2A4A93A90037CEDB /* icon vector.afdesign in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */; };
+		A9ED7A772A4CF18A00BA005B /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7A762A4CF18A00BA005B /* CompletedView.swift */; };
+		A9ED7A792A4CF37B00BA005B /* CompletedAssignmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ED7A782A4CF37B00BA005B /* CompletedAssignmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		A9CDB0A72A4A93A90037CEDB /* icon vector.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "icon vector.svg"; sourceTree = "<group>"; };
 		A9CDB0A82A4A93A90037CEDB /* iconV1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconV1.png; sourceTree = "<group>"; };
 		A9CDB0A92A4A93A90037CEDB /* icon vector.afdesign */ = {isa = PBXFileReference; lastKnownFileType = file; path = "icon vector.afdesign"; sourceTree = "<group>"; };
+		A9ED7A762A4CF18A00BA005B /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		A9ED7A782A4CF37B00BA005B /* CompletedAssignmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedAssignmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 				A9CDB0852A4A89180037CEDB /* AddAssignmentView.swift */,
 				A9CDB0872A4A892C0037CEDB /* EditAssignmentView.swift */,
 				A9CDB0892A4A893C0037CEDB /* ToDoView.swift */,
+				A9ED7A762A4CF18A00BA005B /* CompletedView.swift */,
+				A9ED7A782A4CF37B00BA005B /* CompletedAssignmentView.swift */,
 			);
 			path = Assignments;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 				A9CDB07D2A4A88450037CEDB /* ErrorWrapper.swift in Sources */,
 				A9CDB09E2A4A8ACB0037CEDB /* IconView.swift in Sources */,
 				A9CDB0A22A4A8ADC0037CEDB /* ThemeView.swift in Sources */,
+				A9ED7A792A4CF37B00BA005B /* CompletedAssignmentView.swift in Sources */,
 				A9CDB0812A4A88590037CEDB /* Theme.swift in Sources */,
 				A9CDB09C2A4A8ABF0037CEDB /* IconPicker.swift in Sources */,
 				A9CDB09A2A4A8AB10037CEDB /* GridIconLabelStyle.swift in Sources */,
@@ -356,6 +363,7 @@
 				A9CDB0652A4A86D60037CEDB /* SimpleHWApp.swift in Sources */,
 				A9CDB0932A4A89A20037CEDB /* ClassView.swift in Sources */,
 				A9CDB0A42A4A8AE80037CEDB /* TrailingIconLabelStyle.swift in Sources */,
+				A9ED7A772A4CF18A00BA005B /* CompletedView.swift in Sources */,
 				A9CDB08F2A4A89880037CEDB /* ClassListView.swift in Sources */,
 				A9CDB08A2A4A893C0037CEDB /* ToDoView.swift in Sources */,
 				A9CDB0752A4A87E00037CEDB /* MainView.swift in Sources */,
@@ -531,7 +539,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleHW/Preview Content\"";
 				DEVELOPMENT_TEAM = ZYQ5JDQFTR;
 				ENABLE_PREVIEWS = YES;
@@ -566,7 +574,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"SimpleHW/Preview Content\"";
 				DEVELOPMENT_TEAM = ZYQ5JDQFTR;
 				ENABLE_PREVIEWS = YES;

@@ -25,6 +25,10 @@ struct MainView: View {
                 .tabItem {
                     Label("To Do", systemImage: "checklist")
                 }
+            CompletedView(classes: $classes)
+                .tabItem {
+                    Label("Completed", systemImage: "checkmark.circle.fill")
+                }
         }
         .onChange(of: scenePhase) { phase in
             if phase == .inactive { saveAction() }

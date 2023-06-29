@@ -8,7 +8,7 @@
 import Foundation
 import UserNotifications
 
-struct Assignment: Identifiable, Codable {
+struct Assignment: Identifiable, Codable, Equatable {
     let id: UUID
     var name: String
     var notes: String

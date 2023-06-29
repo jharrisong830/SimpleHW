@@ -1,13 +1,13 @@
 //
-//  ToDoView.swift
+//  CompletedView.swift
 //  SimpleHW
 //
-//  Created by John Graham on 6/26/23.
+//  Created by John Graham on 6/28/23.
 //
 
 import SwiftUI
 
-struct ToDoView: View {
+struct CompletedView: View {
     @Binding var classes: [Class]
     
     var body: some View {
@@ -19,47 +19,37 @@ struct ToDoView: View {
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
                 }
-                .navigationTitle("To Do")
+                .navigationTitle("Completed")
             }
             else {
                 List {
                     ForEach($classes) { $course in
-                        if !course.assignments.isEmpty {
+                        if !course.completedAssignments.isEmpty {
                             Section(header: Text(course.displayName)) {
-                                ForEach($course.orderedAssignments) { $assignm in
+                                ForEach($course.completedAssignments) { $assignm in
                                     NavigationLink(destination: AssignmentView(course: $course, assignm: $assignm)
                                         .navigationTitle(assignm.name)) {
                                             HStack {
                                                 Text(assignm.name)
                                                     .foregroundColor(course.theme.accentColor)
                                                 Spacer()
-                                                if assignm.isAlmostDue() {
-                                                    Label(assignm.dueDate.formatted(.dateTime.day().month()), systemImage: "exclamationmark.triangle.fill")
-                                                        .labelStyle(.trailingIcon)
-                                                        .fontWeight(.bold)
-                                                }
-                                                else {
-                                                    Text(assignm.dueDate.formatted(.dateTime.day().month()))
-                                                }
+                                                Text(assignm.dueDate.formatted(.dateTime.day().month()))
                                             }
                                         }
                                         .swipeActions {
                                             Button(role: .destructive) {
-                                                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
-                                                course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                                                course.completedAssignments.remove(at: course.completedAssignments.firstIndex(of: assignm)!)
                                                 
                                             } label: {
                                                 Label("Delete", systemImage: "trash")
                                             }
                                             Button {
-                                                assignm.notifEnabled = false
-                                                course.completedAssignments.append(assignm)
-                                                UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
-                                                course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                                                course.assignments.append(assignm)
+                                                course.completedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
                                             } label: {
-                                                Label("Mark As Completed", systemImage: "checkmark.circle.fill")
+                                                Label("Mark As Uncompleted", systemImage: "checkmark.circle.badge.xmark.fill")
                                             }
-                                            .tint(.green)
+                                            .tint(.blue)
                                         }
                                         .listRowBackground(course.theme.mainColor)
                                         .listRowSeparatorTint(course.theme.accentColor)
@@ -67,20 +57,20 @@ struct ToDoView: View {
                             }
                         }
                         else {
-                            Section(header: Text(course.displayName), footer: Text("No assignments for \(course.displayName).").font(.headline)) {
+                            Section(header: Text(course.displayName), footer: Text("Nothing completed for \(course.displayName).").font(.headline)) {
                                 EmptyView()
                             }
                         }
                     }
                 }
-                .navigationTitle("To Do")
+                .navigationTitle("Completed")
             }
         }
     }
 }
 
-struct ToDoView_Previews: PreviewProvider {
+struct CompletedView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoView(classes: .constant(Class.sampleClasses))
+        CompletedView(classes: .constant(Class.sampleClasses))
     }
 }

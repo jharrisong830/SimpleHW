@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AssignmentView: View {
-    let course: Class
+    @Binding var course: Class
     @Binding var assignm: Assignment
     @State private var isEditing = false
     @State private var editingAssignment = Assignment.emptyAssignment
@@ -48,6 +48,22 @@ struct AssignmentView: View {
                     else {
                         Text("Disabled").foregroundStyle(.secondary)
                     }
+                }
+            }
+            Section(header: Text("Status")) {
+                Button {
+                    assignm.notifEnabled = false
+                    course.completedAssignments.append(assignm)
+                    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
+                    course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                } label: {
+                    Text("Mark as Completed")
+                }
+                Button(role: .destructive) {
+                    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
+                    course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                } label: {
+                    Text("Delete Assignment")
                 }
             }
             Section(header: Text("Notes")) {
@@ -103,6 +119,6 @@ struct AssignmentView: View {
 
 struct AssignmentView_Previews: PreviewProvider {
     static var previews: some View {
-        AssignmentView(course: Class.sampleClasses[0], assignm: .constant(Class.sampleClasses[0].assignments[0]))
+        AssignmentView(course: .constant(Class.sampleClasses[0]), assignm: .constant(Class.sampleClasses[0].assignments[0]))
     }
 }

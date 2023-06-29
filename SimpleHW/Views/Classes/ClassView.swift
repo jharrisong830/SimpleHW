@@ -53,7 +53,7 @@ struct ClassView: View {
             else {
                 Section(header: Text("Assignments")) {
                     ForEach($course.orderedAssignments) { $assignm in
-                        NavigationLink(destination: AssignmentView(course: course, assignm: $assignm)
+                        NavigationLink(destination: AssignmentView(course: $course, assignm: $assignm)
                             .navigationTitle(assignm.name)) {
                                 HStack {
                                     Text(assignm.name)
@@ -68,14 +68,23 @@ struct ClassView: View {
                                     }
                                 }
                             }
-                    }
-                    .onDelete { indices in
-                        var removeIDArray: [String] = []
-                        for index in indices {
-                            removeIDArray.append(course.assignments[index].id.uuidString)
-                        }
-                        course.orderedAssignments.remove(atOffsets: indices)
-                        UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: removeIDArray)
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
+                                    course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
+                                Button {
+                                    assignm.notifEnabled = false
+                                    course.completedAssignments.append(assignm)
+                                    UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
+                                    course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                                } label: {
+                                    Label("Mark As Completed", systemImage: "checkmark.circle.fill")
+                                }
+                                .tint(.green)
+                            }
                     }
                 }
             }
