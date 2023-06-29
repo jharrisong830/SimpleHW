@@ -13,6 +13,9 @@ struct AssignmentView: View {
     @State private var isEditing = false
     @State private var editingAssignment = Assignment.emptyAssignment
     
+    @State private var completePressed = false
+    @State private var deletePressed = false
+    
     var body: some View {
         List {
             Section(header: Text("Details")) {
@@ -56,15 +59,19 @@ struct AssignmentView: View {
                     course.completedAssignments.append(assignm)
                     UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
                     course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                    completePressed = true
                 } label: {
                     Text("Mark as Completed")
                 }
+                .disabled(completePressed || deletePressed || !course.assignments.contains(assignm))
                 Button(role: .destructive) {
                     UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
                     course.orderedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
+                    deletePressed = true
                 } label: {
                     Text("Delete Assignment")
                 }
+                .disabled(deletePressed || completePressed || !course.assignments.contains(assignm))
             }
             Section(header: Text("Notes")) {
                 Text(assignm.notes)

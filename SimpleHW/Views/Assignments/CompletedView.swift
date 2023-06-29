@@ -27,7 +27,7 @@ struct CompletedView: View {
                         if !course.completedAssignments.isEmpty {
                             Section(header: Text(course.displayName)) {
                                 ForEach($course.completedAssignments) { $assignm in
-                                    NavigationLink(destination: AssignmentView(course: $course, assignm: $assignm)
+                                    NavigationLink(destination: CompletedAssignmentView(course: $course, assignm: $assignm)
                                         .navigationTitle(assignm.name)) {
                                             HStack {
                                                 Text(assignm.name)
@@ -47,7 +47,7 @@ struct CompletedView: View {
                                                 course.assignments.append(assignm)
                                                 course.completedAssignments.remove(at: course.assignments.firstIndex(of: assignm)!)
                                             } label: {
-                                                Label("Mark As Uncompleted", systemImage: "checkmark.circle.badge.xmark.fill")
+                                                Label("Restore", systemImage: "checkmark.circle.badge.xmark.fill")
                                             }
                                             .tint(.blue)
                                         }
