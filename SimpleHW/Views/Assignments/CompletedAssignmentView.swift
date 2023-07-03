@@ -19,29 +19,25 @@ struct CompletedAssignmentView: View {
             Section(header: Text("Details")) {
                 HStack {
                     Label("Name", systemImage: "textformat")
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     Text(assignm.name)
                 }
                 HStack {
-                    Label("Course", systemImage: "book.closed.fill")
+                    Label("Course", systemImage: course.icon.symbol)
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     Text(course.displayName)
                 }
                 HStack {
                     Label("Due Date", systemImage: "calendar")
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
-                    if assignm.isAlmostDue() {
-                        Label(assignm.dueDate.formatted(.dateTime.day().month()), systemImage: "exclamationmark.triangle.fill")
-                            .labelStyle(.trailingIcon)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color.red)
-                    }
-                    else {
-                        Text(assignm.dueDate.formatted(.dateTime.day().month()))
-                    }
+                    Text(assignm.dueDate.formatted(.dateTime.day().month()))
                 }
                 HStack {
                     Label("Notification", systemImage: "bell.badge.fill")
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     if assignm.notifEnabled {
                         Text(assignm.notifDate.formatted(.dateTime.day().month().hour().minute()))

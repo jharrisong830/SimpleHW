@@ -9,6 +9,7 @@ import SwiftUI
 
 struct IconPicker: View {
     @Binding var selection: Icon
+    @Binding var pickingIcon: Bool
 
     var body: some View {
         ScrollView {
@@ -29,6 +30,7 @@ struct IconPicker: View {
                         .padding()
                         .onTapGesture {
                             selection = icon
+                            pickingIcon = false
                         }
                 }
             }
@@ -39,6 +41,6 @@ struct IconPicker: View {
 
 struct SymbolPicker_Previews: PreviewProvider {
     static var previews: some View {
-        IconPicker(selection: .constant(.terminal))
+        IconPicker(selection: .constant(.terminal), pickingIcon: .constant(true))
     }
 }

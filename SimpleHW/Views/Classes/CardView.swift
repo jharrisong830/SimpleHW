@@ -31,6 +31,7 @@ struct CardView: View {
         .foregroundColor(course.theme.accentColor)
         .overlay(alignment: .leading) {
             Image(systemName: course.icon.symbol)
+                .foregroundColor(course.theme.accentColor)
                 .font(.system(size: 50))
                 .opacity(0.10)
         }

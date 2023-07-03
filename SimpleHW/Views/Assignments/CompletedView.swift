@@ -34,6 +34,7 @@ struct CompletedView: View {
                                                     .foregroundColor(course.theme.accentColor)
                                                 Spacer()
                                                 Text(assignm.dueDate.formatted(.dateTime.day().month()))
+                                                    .foregroundColor(course.theme.accentColor)
                                             }
                                         }
                                         .swipeActions {

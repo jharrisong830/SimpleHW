@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 import UserNotifications
 
 struct ClassView: View {
@@ -21,11 +19,13 @@ struct ClassView: View {
             Section(header: Text("Details")) {
                 HStack {
                     Label("Title", systemImage: course.icon.symbol)
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     Text(course.title)
                 }
                 HStack {
-                    Label("Nickname", systemImage: "textformat.123")
+                    Label("Nickname", systemImage: "textformat")
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     if course.code.isEmpty {
                         Text("None")
@@ -36,7 +36,8 @@ struct ClassView: View {
                     }
                 }
                 HStack {
-                    Label("Credits", systemImage: "book.closed.fill")
+                    Label("Credits", systemImage: "checkmark.seal.fill")
+                        .labelStyle(IconWithThemeStyle(theme: course.theme))
                     Spacer()
                     Text("\(course.credits)")
                 }

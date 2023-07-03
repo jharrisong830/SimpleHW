@@ -20,14 +20,14 @@ struct EditAssignmentView: View {
                 DatePicker("Due Date", selection: $assignm.dueDate, displayedComponents: [.date])
                     .datePickerStyle(.compact)
             }
-            Section(header: Text("Notification")) {
+            Section(header: Text("Notifications")) {
                 if assignm.notifEnabled {
-                    DatePicker("Notification Date", selection: $assignm.notifDate, in: Date()..., displayedComponents: [.date, .hourAndMinute])
-                        .datePickerStyle(.graphical)
                     Button("Disable Notifications") {
                         assignm.notifEnabled = false
                         UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [assignm.id.uuidString])
                     }
+                    DatePicker("Notification Date", selection: $assignm.notifDate, in: Date()..., displayedComponents: [.date, .hourAndMinute])
+                        .datePickerStyle(.graphical)
                 }
                 else {
                     Button("Enable Notifications") {

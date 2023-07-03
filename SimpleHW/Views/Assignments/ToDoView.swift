@@ -37,9 +37,11 @@ struct ToDoView: View {
                                                     Label(assignm.dueDate.formatted(.dateTime.day().month()), systemImage: "exclamationmark.triangle.fill")
                                                         .labelStyle(.trailingIcon)
                                                         .fontWeight(.bold)
+                                                        .foregroundColor(course.theme.accentColor)
                                                 }
                                                 else {
                                                     Text(assignm.dueDate.formatted(.dateTime.day().month()))
+                                                    .foregroundColor(course.theme.accentColor)
                                                 }
                                             }
                                         }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9149D0F2A4B820D00E9D001 /* SimpleHWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9149D0E2A4B820D00E9D001 /* SimpleHWTests.swift */; };
+		A96A38F32A538CB50045C812 /* IconWithThemeStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96A38F22A538CB50045C812 /* IconWithThemeStyle.swift */; };
 		A9CDB0652A4A86D60037CEDB /* SimpleHWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */; };
 		A9CDB0692A4A86D60037CEDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB0682A4A86D60037CEDB /* Assets.xcassets */; };
 		A9CDB06C2A4A86D60037CEDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CDB06B2A4A86D60037CEDB /* Preview Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		A9149D0C2A4B820D00E9D001 /* SimpleHWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleHWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9149D0E2A4B820D00E9D001 /* SimpleHWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHWTests.swift; sourceTree = "<group>"; };
+		A96A38F22A538CB50045C812 /* IconWithThemeStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconWithThemeStyle.swift; sourceTree = "<group>"; };
 		A9CDB0612A4A86D60037CEDB /* SimpleHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CDB0642A4A86D60037CEDB /* SimpleHWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleHWApp.swift; sourceTree = "<group>"; };
 		A9CDB0682A4A86D60037CEDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				A9CDB09F2A4A8AD30037CEDB /* ThemePicker.swift */,
 				A9CDB0A12A4A8ADC0037CEDB /* ThemeView.swift */,
 				A9CDB0A32A4A8AE80037CEDB /* TrailingIconLabelStyle.swift */,
+				A96A38F22A538CB50045C812 /* IconWithThemeStyle.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				A9CDB07D2A4A88450037CEDB /* ErrorWrapper.swift in Sources */,
 				A9CDB09E2A4A8ACB0037CEDB /* IconView.swift in Sources */,
 				A9CDB0A22A4A8ADC0037CEDB /* ThemeView.swift in Sources */,
+				A96A38F32A538CB50045C812 /* IconWithThemeStyle.swift in Sources */,
 				A9ED7A792A4CF37B00BA005B /* CompletedAssignmentView.swift in Sources */,
 				A9CDB0812A4A88590037CEDB /* Theme.swift in Sources */,
 				A9CDB09C2A4A8ABF0037CEDB /* IconPicker.swift in Sources */,

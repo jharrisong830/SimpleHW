@@ -9,6 +9,7 @@ import SwiftUI
 
 struct EditClassView: View {
     @Binding var course: Class
+    @State private var pickingIcon = false
     
     var body: some View {
         Form {
@@ -24,15 +25,24 @@ struct EditClassView: View {
                 }
             }
             Section(header: Text("Customization")) {
-                NavigationLink(destination: IconPicker(selection: $course.icon)) {
+                Button {
+                    pickingIcon = true
+                } label: {
                     HStack {
                         Text("Icon")
+                            .foregroundColor(.primary)
                         Spacer()
                         IconView(icon: course.icon)
-                                .labelStyle(TrailingIconLabelStyle())
+                            .labelStyle(TrailingIconLabelStyle())
+                            .foregroundColor(.accentColor)
+//                        Image(systemName: "chevron.right")
+//                        .foregroundColor(.accentColor)
                     }
                 }
                 ThemePicker(selection: $course.theme)
+            }
+            .navigationDestination(isPresented: $pickingIcon) {
+                IconPicker(selection: $course.icon, pickingIcon: $pickingIcon)
             }
         }
     }
