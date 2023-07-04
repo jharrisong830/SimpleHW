@@ -37,12 +37,16 @@ struct ClassListView: View {
                         }
                         .listRowBackground(course.theme.mainColor)
                     }
+                    .onMove { source, index in
+                        classes.move(fromOffsets: source, toOffset: index)
+                    }
                     .onDelete { indices in
                         classes.remove(atOffsets: indices)
                     }
                 }
                 .navigationTitle("Classes")
                 .toolbar {
+                    EditButton()
                     Button(action: {
                         isCreating=true
                     }) {
