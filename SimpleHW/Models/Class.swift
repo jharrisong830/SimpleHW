@@ -135,7 +135,7 @@ extension Class: Codable {
         do {
             self.icon = try values.decode(Icon.self, forKey: .icon)
         } catch {
-            self.icon = .network
+            self.icon = .dots
         }
         
         do {
